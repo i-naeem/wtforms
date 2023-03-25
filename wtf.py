@@ -7,9 +7,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    form = RegistrationForm()
 
-    return render_template('index.html', form=form)
+    return render_template('index.html', )
 
 
 if __name__ == '__main__':
