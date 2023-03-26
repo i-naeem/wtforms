@@ -18,23 +18,23 @@
         <h2>Sing up now </h2>
         <form action="#">
           <div class="form-control">
-            <label class="form-control-label" for="username">Username:</label>
-            <input required type="text"  class="form-control-input" id="username"/>
+            {{ form.username.label(class="form-control-label") }}
+            {{ form.username(class="form-control-input") }}
             <p class="form-control-error">Username can not be empty</p>
           </div>
           <div class="form-control">
-            <label class="form-control-label" for="email">Email:</label>
-            <input required type="email"  class="form-control-input" id="email"/>
+            {{ form.email.label(class="form-control-label") }}
+            {{ form.email(class="form-control-input", type="email") }}
             <p class="form-control-error">Username can not be empty</p>
           </div>
           <div class="form-control">
-            <label class="form-control-label" for="password">Password:</label>
-            <input required type="password"  class="form-control-input" id="password"/>
+            {{ form.password.label(class="form-control-label") }}
+            {{ form.password(class="form-control-input", type="password") }}
             <p class="form-control-error">Username can not be empty</p>
           </div>
 
           <div class="form-control">
-            <button type="submit" class="submit-btn">Login</button>
+            {{ form.submit(class="submit-btn")}} 
           </div>
         </form>
       </div>
