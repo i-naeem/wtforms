@@ -32,6 +32,11 @@
             {{ form.password(class="form-control-input", type="password") }}
             <p class="form-control-error">Username can not be empty</p>
           </div>
+          <div>
+            {{ form.agreement() }}
+            {{ form.agreement.label() }}
+            <p class="form-control-error">Username can not be empty</p>
+          </div>
 
           <div class="form-control">
             {{ form.submit(class="submit-btn")}} 
